@@ -1,0 +1,41 @@
+html,
+body
+{
+	overflow-x: hidden;
+	overflow-y: auto;
+
+	margin: 0;
+	padding: 0;
+
+	background-color: #000;
+}
+
+a,
+a:link,
+a:hover,
+a:visited,
+a:active
+{
+	text-decoration: none;
+
+	color: #000;
+	outline: none;
+}
+
+a:focus
+{
+	border: none;
+	outline: none;
+}
+
+img
+{
+	border: none;
+	border-style: none;
+}
+
+.txt,
+.txt2
+{
+	font-family: $f_quicksand;
+}

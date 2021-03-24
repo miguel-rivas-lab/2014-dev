@@ -1,0 +1,193 @@
+#contacts
+{
+	.container
+	{
+		position: relative;
+		@include size(100%, x, 500px, x);
+		top: 80px;
+
+		@media screen and (max-height: 700px){ top: 20px; }
+
+		.info_box
+		{
+			position: relative;
+			width: 325px;
+			top: 230px;
+			margin: auto;
+			text-align: left;
+			border: 27px #3b2314 solid;
+			border-radius: 25px;
+			background-color: $chartreuse;
+		}
+
+		.preview
+		{
+			position: absolute;
+			z-index: 2;
+			@include position(-180px, 50px, x, x);
+			width: 219px;
+			margin: auto;
+		}
+
+		ul
+		{
+			margin: 47px auto 18px;
+			width: 250px;
+			list-style: none;
+			padding: 0;
+		}
+
+		li
+		{
+			margin: 6px 0;
+		}
+
+		a
+		{
+			font: 10pt $f_body;
+			color: #000;
+			&:hover
+			{
+				color: #3C6F14;
+			}
+		}
+	}
+}
+
+.icon
+{
+	&:before
+	{
+		position: relative;
+		top: 5px;
+		margin-right: 12pt;
+		font-size: 14pt;
+		font-family: 'icomoon';
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	&.about_me:before {
+		content: "\e604";
+	}
+	&.issuu:before {
+		content: "\e605";
+	}
+	&.codepen:before {
+		content: "\eae5";
+	}
+	&.behance:before {
+		content: "\e600";
+	}
+	&.linkedin:before {
+		content: "\e602";
+	}
+	&.mail:before {
+		content: "\ea86";
+	}
+	&.google_plus:before {
+		content: "\ea8b";
+	}
+	&.vimeo:before {
+		content: "\e900";
+	}
+}
+
+
+/* Stars */
+
+#st01,
+#st01_2
+{
+	z-index: -1;
+}
+
+#st02,
+#st02_2
+{
+	z-index: -3;
+}
+
+#st03,
+#st03_2
+{
+	z-index: -4;
+}
+
+#st04,
+#st04_2
+{
+	z-index: -2;
+}
+
+#st05,
+#st05_2
+{
+	z-index: -5;
+}
+
+.rst,
+.lst
+{
+	position: absolute;
+	top: 30px;
+
+	height: 420px;
+
+	background-repeat: no-repeat;
+	background-position: bottom left;
+}
+
+.rst
+{
+	left: 50%;
+	transform: scaleX(-1);
+}
+
+.lst
+{
+	right: 50%;
+}
+
+/* Birds */
+
+.bird
+{
+	position: absolute;
+	z-index: -2;
+
+	background-repeat: no-repeat;
+}
+
+#bird_01
+{
+	@include size(125px, x, 103px, x);
+	@include position(150px, x, x, 10%);
+	background-image: url('../img/sprites-04.png');
+	background-position: -4px -144px;
+}
+
+#bird_02
+{
+	@include size(60px, x, 50px, x);
+	@include position(500px, 10%, x, x);
+	background-image: url('../img/sprites-04.png');
+	background-position: -4px -255px;
+
+	@media screen and (max-height: 700px){ display: none; }
+}
+
+#bird_03
+{
+	@include size(140px, x, 140px, x);
+	@include position(150px, 12%, x, x);
+	background-image: url('../img/sprites-04.png');
+	background-position: -4px -1px;
+}

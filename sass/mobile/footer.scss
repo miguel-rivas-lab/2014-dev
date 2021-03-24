@@ -1,0 +1,131 @@
+footer
+{
+	position: relative;
+	@include size(100%, x, 730px, x);
+	background: #c69c6d url('../img/s-08.png') no-repeat center top;
+
+	h2
+	{
+		font: 21pt $f_lgothic;
+		position: absolute;
+		@include position(-20px, x, x, 50%);
+		color: #c69c6d;
+	}
+
+	.orn
+	{
+		position: absolute;
+		top: -90px;
+		@include size(100%, x, 270px, x);
+		background: url('../img/s-04.png') repeat-x left bottom;
+	}
+
+	.img_01
+	{
+		position: absolute;
+		z-index: 1;
+		@include position(-40px, x, x, 10%);
+		@include size(110px, x, 110px, x);
+		background: url('../img/s-09.png') no-repeat -17px -120px;
+	}
+
+	.img_02
+	{
+		position: absolute;
+		z-index: 1;
+		@include position(-40px, x, x, 10%);
+		@include size(110px, x, 110px, x);
+
+		-webkit-transform: rotate(360deg);
+			-ms-transform: rotate(360deg);
+				transform: rotate(360deg);
+		-webkit-animation: rtl linear 10s infinite;
+				animation: rtl linear 10s infinite;
+
+		background: url('../img/s-10.png') no-repeat 0 0;
+	}
+
+	.ln_01
+	{
+		position: relative;
+		@include position(293px, x, x, 0);
+		@include size(100%, x, 40px, x);
+		background-color: #3b2314;
+	}
+
+	   ul
+		{
+			margin: 415px auto 0;
+			width: 285px;
+			list-style: none;
+			padding: 0;
+			font: 12pt $f_quicksand;
+		}
+
+		li
+		{
+			margin: 6px 0;
+		}
+
+					a
+		{
+			color: #000;
+			&:hover
+			{
+				color: #fff;
+			}
+		}
+
+	em
+	{
+		margin: 0;
+		font-style: normal;
+		font-weight: bold;
+	}
+}
+
+.icon
+{
+	&:before
+	{
+		position: relative;
+		top: 5px;
+		margin-right: 12pt;
+		font-size: 14pt;
+		font-family: 'icomoon';
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	&.about_me:before {
+		content: "\e604";
+	}
+	&.issuu:before {
+		content: "\e605";
+	}
+	&.codepen:before {
+		content: "\eae5";
+	}
+	&.behance:before {
+		content: "\e600";
+	}
+	&.linkedin:before {
+		content: "\e602";
+	}
+	&.mail:before {
+		content: "\ea86";
+	}
+	&.google_plus:before {
+		content: "\ea8b";
+	}
+	&.vimeo:before {
+		content: "\e900";
+	}
+}

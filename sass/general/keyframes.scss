@@ -1,0 +1,59 @@
+@keyframes rtr
+{
+	from
+	{
+		-webkit-transform: rotate(0deg);
+			-ms-transform: rotate(0deg);
+				transform: rotate(0deg);
+	}
+	to
+	{
+		-webkit-transform: rotate(360deg);
+			-ms-transform: rotate(360deg);
+				transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes rtr
+{
+	from
+	{
+		-webkit-transform: rotate(0deg);
+				transform: rotate(0deg);
+	}
+	to
+	{
+		-webkit-transform: rotate(360deg);
+				transform: rotate(360deg);
+	}
+}
+
+@keyframes rtl
+{
+	from
+	{
+		-webkit-transform: rotate(360deg);
+			-ms-transform: rotate(360deg);
+				transform: rotate(360deg);
+	}
+	to
+	{
+		-webkit-transform: rotate(0deg);
+			-ms-transform: rotate(0deg);
+				transform: rotate(0deg);
+	}
+}
+
+@-webkit-keyframes rtl
+{
+	from
+	{
+		-webkit-transform: rotate(360deg);
+				transform: rotate(360deg);
+	}
+	to
+	{
+		-webkit-transform: rotate(0deg);
+				transform: rotate(0deg);
+	}
+}

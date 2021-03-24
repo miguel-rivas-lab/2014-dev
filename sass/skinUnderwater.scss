@@ -1,0 +1,31 @@
+body
+{
+	background-color: #ea916a;
+}
+
+#box_tree_02
+{
+	position: fixed;
+	z-index: -7;
+	right: 100px;
+	bottom: 50px;
+	display: block;
+	width: 450px;
+	height: 370px;
+	transform: bottom;
+	animation: mud ease-in-out 3s infinite alternate;
+	background-image: url('../img/bk_b4_city.png') ;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+@keyframes mud
+{
+	from
+	{
+		bottom: 60px;
+	}to
+	{
+		bottom: 80px;
+	}
+}

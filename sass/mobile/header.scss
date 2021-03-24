@@ -1,0 +1,28 @@
+nav
+{
+	font: 22pt $f_lgothic;
+	text-transform: uppercase;
+	background: #222;
+	position: fixed;
+	@include position(x, 0, 0, x);
+	width: 100%;
+	text-align: center;
+	z-index: 5;
+	padding: 2px;
+	span
+	{
+		color: $chartreuse;
+		&:hover
+		{
+			color: #fff;
+		}
+	}
+}
+
+header
+{
+	position: relative;
+	z-index: 3;
+	@include size(100%, x, 100vh, x);
+	background: #404040 url('../img/logo.png') no-repeat center center;
+}

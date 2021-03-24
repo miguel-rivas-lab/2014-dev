@@ -1,0 +1,31 @@
+body
+{
+	background-color: #A4CD39;
+}
+
+#box_tree
+{
+	position: fixed;
+	z-index: -7;
+	bottom: 70px;
+	left: 100px;
+	display: block;
+	width: 432px;
+	height: 548px;
+	transform: bottom;
+	animation: mud2 ease-in-out 3s infinite alternate;
+	background-image: url('../img/bk_b4_clock.png') ;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+@keyframes mud2
+{
+	from
+	{
+		bottom: 70px;
+	}to
+	{
+		bottom: 90px;
+	}
+}

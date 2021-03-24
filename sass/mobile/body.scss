@@ -1,0 +1,83 @@
+#body
+{
+	position: relative;
+	z-index: 2;
+
+	width: 100%;
+
+	background-color: #3984cd;
+
+	.container
+	{
+		padding: 265px 0 160px;
+	}
+
+	#dragon
+	{
+		position: absolute;
+		@include position(-190px, -270px, x, x);
+		@include size(500px, x, 500px, x);
+
+		-webkit-transform: rotate(360deg);
+			-ms-transform: rotate(360deg);
+				transform: rotate(360deg);
+		-webkit-animation: rtl linear 9s infinite;
+				animation: rtl linear 9s infinite;
+
+		background: url('../img/s-06.png') no-repeat;
+		background-position: 20px 70px;
+	}
+
+	.orn
+	{
+		position: absolute;
+		@include position(x, x, -1px, 0);
+		@include size(100%, x, 99px, x);
+		background: url('../img/s-02.png') repeat-x center bottom;
+	}
+
+	.orn_02
+	{
+		position: absolute;
+		@include position(-1px, x, x, 0);
+		@include size(100%, x, 295px, x);
+		background: url('../img/s-07.png') no-repeat left top;
+	}
+
+	h1
+	{
+		font-family: $f_lgothic;
+		font-size: 29pt;
+
+		display: inline;
+
+		margin-bottom: 15px;
+		padding: 0 14px;
+
+		letter-spacing: 1pt;
+
+		color: #3984cd !important;
+		background-color: #000;
+	}
+
+	.txt
+	{
+		font-size: 16pt;
+			width: 90%;
+		margin: 85px auto;
+	}
+
+	#info_03
+	{
+		h1
+		{
+			font-size: 23pt;
+		}
+	}
+
+	#info_02,
+	#info_04
+	{
+		text-align: right;
+	}
+}

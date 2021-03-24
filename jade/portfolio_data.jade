@@ -1,0 +1,299 @@
+mixin txt01()
+	#info_01.txt
+		span(lang="eng")
+			h2 Hi! My name is Miguel Rivas, <small>I'm a Frontend Developer living in Austin, TX.</small>
+
+mixin txt01_mob()
+	#info_01.txt
+		span(lang="eng")
+			h1 Hi!
+			p My name is Miguel Rivas, I'm a Frontend Developer living in Austin, TX.
+
+mixin txt02()
+	#info_02.txt
+		span(lang="eng")
+			h1 Why Me?
+			p I work with HTML/JADE/HAML, CSS/SASS/LESS, and the Adobe Suite (Illustrator, Photoshop, Indesign, Flash and Premiere). I also love git and have been known to roll up my sleeves and work with basic Ruby on Rails and PHP.
+
+mixin txt03()
+	#info_03.txt
+		span(lang="eng")
+			h1 Experience in the area
+			p I've work as Front-End Developer for <strong>Cerveza Presidente</strong> in the web app <strong>Destapa El Coro</strong> and in the page of <strong>Carnaval Presidente 2015</strong>. also i worked with other brand as Orange, Pepsi and Outback.
+
+mixin txt09()
+	h1 Cont&aacute;ctame
+	| email: jmiguelrivassantos@gmail.com
+
+mixin moreInfo(validator)
+	if validator == "FlatCSS"
+		p A CSS Plugin that apply predefined style to buttons.
+		p In this project:
+		ul
+			li HTML/JADE
+			li CSS/SASS
+
+	if validator == "HTML/Love"
+		p Research that explaing why its important to know more about HTML structure.
+		p In this project:
+		ul
+			li HTML/HAML
+			li Animate.css
+			li jQuery
+			li CSS/SASS
+			li Designed in Illustrator
+
+	if validator == "Tetravex"
+		p TetraVex is an edge-matching puzzle. The objective of the game is to place the tiles in the grid in the proper position. Two tiles should only be placed next to each other if the numbers on adjacent faces match.
+		p In this project:
+		ul
+			li HTML/Jade
+			li Sizzle
+			li Lodash
+			li Velocity.js
+			li CSS/SASS
+			li Designed in Illustrator & Inkscape
+
+	if validator == "Timeline of the Web"
+		p This project was a research about basic info of the web, so the reader can have a little understanding of multiples topic with people of the area.
+		p In this project:
+		ul
+			li HTML/Jade
+			li jQuery
+			li Stellar.js
+			li CSS/SASS
+			li All designed in Inkscape
+			li An horizontal scrolling design
+
+	if validator == "Carnaval Presidente 2015"
+		small Front-End Developer at Capital DBG
+		p Project made to Cerveza Presidente.
+		p In this project:
+		ul
+			li HTML
+			li jQuery
+			li jQuery-colorbox
+			li GruntJs
+			li CSS/SASS
+			li Basic PHP
+			li JSON
+			li Design provided by the team of designers of Capital DBG
+			li "Genera tu ticket para el carnaval" was made by other Front-End
+
+	if validator == "Presidente Photo Assignment 2014"
+		small Front-End Developer at Capital DBG
+		p Project made to Cerveza Presidente and the support of a Back-End from Capital DBG.
+		p In this project:
+		ul
+			li HTML
+			li jQuery
+			li jQuery-colorbox
+			li GruntJs
+			li CSS/SASS
+			li Design provided by the team of designers of Capital DBG
+
+	if validator == "Mainfront"
+		p A set of online frontend tools brought together under a single link.
+		p In this project:
+		ul
+			li HTML
+			li jQuery
+			li GruntJs
+			li CSS/SASS
+
+	if validator == "Portfolio 02"
+		p Multimedia Portfolio made for college.
+		p In this project:
+		ul
+			li Illustrator
+			li Autocad
+			li Indesign
+			li Photoshop
+			li Inkscape
+			li Scribus
+			li Flash
+			li Fireworks
+			li HTML/CSS/JS
+
+	if validator == "Portfolio 01"
+		p Multimedia Portfolio made for college.
+		p In this project:
+		ul
+			li Illustrator
+			li Photoshop
+			li Blender
+			li Indesign
+			li Freehand
+			li HTML/CSS/JS
+			li Maya
+			li SK1
+			li Flash
+			li Fireworks
+
+	if validator == "Age Filter"
+		small Front-End Developer at Capital DBG
+		p Age filter of "Verano Presidente 2015" (Door open when you are 18+).
+		p In this project:
+		ul
+			li HTML
+			li jQuery
+			li CSS/SASS
+			li JSON
+			li Design provided by the team of designers of Capital DBG
+
+	if validator == "Loader"
+		small Front-End Developer at Capital DBG
+		p Loader of "80 Aniversario Presidente 2015".
+		p In this project:
+		ul
+			li HTML
+			li CSS/SASS
+
+	if validator == "Mineros de Apap"
+		small Front-End Developer at Capital DBG
+		p A Project for La Asociación Popular de Ahorros y Prestamos (APAP) where you create your avatar and make a background with it.
+		p This design and illustrations were provided by Shirley Hernández Ticona the Art director assign from Capital DBG for this project.
+		p In this project:
+		ul
+			li HTML/JADE
+			li jQuery
+			li CSS/SASS
+			li Design provided by the team of designers of Capital DBG
+
+	if validator == "DrLogic"
+		small Front-End Developer at Pixel Perfect Tree
+		p This was the second project that i worked at Pixel Perfect Tree. When it was given to me it was an empty frontend with the provided design and a defined <em>.env.sample</em> with a basic configuration of the ports, <em>gitignored</em>, ruby version and some initial gems like <em>haml-rails</em> and <em>autoprefixer</em>.
+
+		p After that I installed the missing gems for <em>bootstrap</em>, <em>rail-sass</em> and proposed to the lead developer a new way to defined metadata for every project.
+
+		p In this project:
+		ul
+			li HTML/HAML
+			li jQuery
+			li CSS/SASS
+			li Ruby on Rails
+
+	if validator == "DrLogic // Error 404"
+		small Web Designer at Pixel Perfect Tree
+		p Error 404 Page from Drlogic
+		p In this project:
+		ul
+			li HTML/HAML
+			li CSS/SASS
+			li Ruby on Rails
+
+	if validator == "Pixel Perfect Tree // Error 404"
+		small Web Designer at Pixel Perfect Tree
+		p Error 404 Page from Pixel Perfect Tree
+		p In this project:
+		ul
+			li HTML/HAML
+			li CSS/SASS
+			li Ruby on Rails
+
+	if validator == "Pixel Perfect Tree // Error 500"
+		small Web Designer at Pixel Perfect Tree
+		p Error 500 Page from Pixel Perfect Tree
+		p In this project:
+		ul
+			li HTML/HAML
+			li CSS/SASS
+			li Ruby on Rails
+
+mixin ptf(link, behavior, imgURL, tittle)
+	article.ptf
+		img(src=imgURL, alt=tittle + " Preview")
+		span
+			h1=tittle
+			+moreInfo(tittle)
+			a.btn(href=link, target=behavior) See Project
+
+mixin portfolio()
+	+ptf( "https://www.drlogic.com/", "_blank", "img/drlogic.jpg", "DrLogic" )
+	+ptf( "../project/mineros/", "_blank", "img/apap.jpg", "Mineros de Apap" )
+	+ptf( "https://aguacatek.github.io/flatCSS/", "_blank", "img/flatcss.jpg", "FlatCSS" )
+	+ptf( "../project/html-love/", "_blank", "img/ptf-html-love.jpg", "HTML/Love" )
+	+ptf( "../project/tetravex/", "_blank", "img/ptf-tetravex.jpg", "Tetravex" )
+	+ptf( "http://www.presidente.com.do/carnaval/2015/home.php", "_blank", "img/ptf-carnaval.jpg", "Carnaval Presidente 2015" )
+	+ptf( "http://presidente.com.do/photo-assignment/", "_blank", "img/ptf-photo-presidente.jpg", "Presidente Photo Assignment 2014" )
+	+ptf( "../project/timeline/", "_blank", "img/ptf-04.jpg", "Timeline of the Web" )
+	+ptf( "../project/mainfront/", "_blank", "img/ptf-03.jpg", "Mainfront" )
+	+ptf( "http://issuu.com/aguacatekun/docs/ptf86", "_blank", "img/ptf-02.jpg", "Portfolio 02" )
+	+ptf( "http://issuu.com/aguacatekun/docs/ptf13", "_blank", "img/ptf-01.jpg", "Portfolio 01" )
+
+mixin prototypes()
+	+ptf( "../project/verano_filter/", "_blank", "img/ptf-verano.jpg", "Age Filter" )
+	+ptf( "../project/aniversario_loader/", "_blank", "img/ptf-loader.jpg", "Loader" )
+	+ptf( "../project/drlogic_404/", "_blank", "img/drlogic_404.jpg", "DrLogic // Error 404" )
+	+ptf( "../project/pixelpt/404.html", "_blank", "img/ppt_404.jpg", "Pixel Perfect Tree // Error 404" )
+	+ptf( "../project/pixelpt/500.html", "_blank", "img/ppt_500.jpg", "Pixel Perfect Tree // Error 500" )
+
+mixin portfolioMobile()
+	a.ptf(href="https://www.drlogic.com/", target="_blank")
+		img(src="img/drlogic.jpg", alt="DrLogic")
+	a.ptf(href="http://www.presidente.com.do/carnaval/2015/home.php", target="_blank")
+		img(src="img/ptf-carnaval.jpg", alt="Carnaval Presidente 2015")
+	a.ptf(href="http://presidente.com.do/photo-assignment/", target="_blank")
+		img(src="img/ptf-photo-presidente.jpg", alt="Presidente Photo Assignment 2014")
+	a.ptf(href="../project/aniversario_loader/", target="_blank")
+		img(src="img/ptf-loader.jpg", alt="Loader")
+	a.ptf(href="../project/drlogic_404/", target="_blank")
+		img(src="img/drlogic_404.jpg", alt="DrLogic // Error 404")
+	a.ptf(href="../project/pixelpt/404.html", target="_blank")
+		img(src="img/ppt_404.jpg", alt="Pixel Perfect Tree // Error 404")
+	a.ptf(href="../project/pixelpt/500.html", target="_blank")
+		img(src="img/ppt_500.jpg", alt="Pixel Perfect Tree // Error 500")
+
+	a.ptf(href="../project/html-love/", target="_blank")
+		img(src="img/ptf-html-love.jpg", alt="HTML Love")
+	a.ptf(href="https://aguacatek.github.io/flatCSS/", target="_blank")
+		img(src="img/flatcss.jpg", alt="FlatCSS")
+	a.ptf(href="../project/tetravex/", target="_self")
+		img(src="img/ptf-tetravex.jpg", alt="Tetravex")
+	a.ptf(href="../project/mainfront/", target="_self")
+		img(src="img/ptf-03.jpg", alt="Mainfront")
+	a.ptf(href="http://issuu.com/aguacatekun/docs/ptf86", target="_blank")
+		img(src="img/ptf-02.jpg", alt="Portfolio 02")
+	a.ptf(href="http://issuu.com/aguacatekun/docs/ptf13", target="_blank")
+		img(src="img/ptf-01.jpg", alt="Portfolio 01")
+	a.ptf(href="http://codepen.io/aguacatekun/pen/PqbqpL", target="_blank")
+		img(src="img/ptf-09.jpg", alt="windows form preview")
+	a.ptf(href="../project/grid/", target="_self")
+		img(src="img/ptf-11.jpg", alt="cropping preview")
+	a.ptf(href="../project/3d/", target="_self")
+		img(src="img/ptf-10.jpg", alt="drakkar preview")
+	a.ptf(href="http://codepen.io/aguacatekun/pen/yNJJpG", target="_blank")
+		img(src="img/ptf-06.jpg", alt="gear prototype preview")
+	a.ptf(href="../project/css_properties/", target="_self")
+		img(src="img/ptf-05.jpg", alt="css preview")
+	a.ptf(href="../project/quack/", target="_self")
+		img(src="img/ptf-08.jpg", alt="Bootstrap preview")
+
+mixin experiments()
+	a.ptf(href="http://codepen.io/casperu/pen/PqbqpL", target="_blank")
+		img(src="img/ptf-09.jpg", alt="windows form preview")
+	a.ptf(href="../project/grid/", target="_self")
+		img(src="img/ptf-11.jpg", alt="cropping preview")
+	a.ptf(href="../project/3d/", target="_self")
+		img(src="img/ptf-10.jpg", alt="drakkar preview")
+	a.ptf(href="http://codepen.io/casperu/pen/yNJJpG", target="_blank")
+		img(src="img/ptf-06.jpg", alt="gear prototype preview")
+	a.ptf(href="http://codepen.io/casperu/pen/oXxPvw", target="_blank")
+		img(src="img/ptf-07.jpg", alt="screen prototype preview")
+	a.ptf(href="../project/css_properties/", target="_self")
+		img(src="img/ptf-05.jpg", alt="css preview")
+	a.ptf(href="../project/quack/", target="_self")
+		img(src="img/ptf-08.jpg", alt="Bootstrap preview")
+	a.ptf(href="../project/svg_101/", target="_self")
+		img(src="img/ptf-svg.jpg", alt="SVG 101")
+
+mixin contactMe()
+	ul
+		li: a(href="http://codepen.io/casperu/", target="_blank").icon.codepen
+			| Casperu
+
+		li: a(href="https://vimeo.com/casperu", target="_blank").icon.vimeo
+			| Miguel Rivas
+
+		li: a(href="https://do.linkedin.com/pub/miguel-rivas/74/6bb/b57", target="_blank").icon.linkedin
+			| Miguel Rivas

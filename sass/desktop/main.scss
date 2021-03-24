@@ -1,0 +1,134 @@
+body
+{
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	background-color: #7291ca;
+}
+
+::selection
+{
+  background-color: #000;
+  color: #fff;
+}
+
+a,
+a:link,
+a:hover,
+a:visited,
+a:active
+{
+	text-decoration: none;
+}
+
+a:focus
+{
+	outline: none;
+}
+
+img
+{
+	border: none;
+}
+
+em
+{
+	margin: 0;
+	font-style: normal;
+	font-weight: bold;
+}
+
+h1
+{
+	font: 22pt $f_title;
+	text-transform: uppercase;
+	margin: 0;
+	line-height: 1;
+	color: #603813;
+	letter-spacing: .5pt;
+}
+
+small
+{
+	font: 9pt $f_body;
+	text-transform: uppercase;
+	margin: 0;
+	line-height: 1;
+	color: #FBEB36;
+	letter-spacing: .5pt;
+}
+
+p
+{
+	font: 10pt $f_body;
+	margin: 15px auto;
+}
+
+ul
+{
+	font: 17pt $f_title;
+}
+
+.btn
+{
+	font: 9pt $f_body;
+	color: #fff;
+	background-color: #FF002F;
+	padding: 6px 20px;
+	transition: 500ms;
+	display: inline-block;
+
+	&:hover
+	{
+		background-color: $chartreuse;
+		color: #000;
+	}
+}
+
+.fix
+{
+	width: 960px;
+	margin: auto;
+}
+
+.rtl,
+.rtr
+{
+	-webkit-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+			transform: rotate(360deg);
+}
+
+.rtl
+{
+	-webkit-animation: rtl linear 9s infinite;
+			animation: rtl linear 9s infinite;
+}
+
+.rtr
+{
+	-webkit-animation: rtr linear 9s infinite;
+			animation: rtr linear 9s infinite;
+}
+
+@keyframes sky
+{
+	from
+	{
+		background-position: 0 0;
+	}  to
+	{
+		background-position: 800px 0;
+	}
+}
+
+@-webkit-keyframes sky
+{
+	from
+	{
+		background-position: 0 0;
+	}  to
+	{
+		background-position: 800px 0;
+	}
+}

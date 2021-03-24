@@ -1,0 +1,114 @@
+#portfolio,
+#experiments,
+#prototypes
+{
+	overflow-y: auto;
+
+	.container
+	{
+		text-align: center;
+	}
+	img
+	{
+		transition: 500ms;
+		box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.52);
+	}
+	img:hover
+	{
+		opacity: .8;
+		filter: alpha(opacity=80);
+	}
+
+	em
+	{
+		color: #7cb1e8;
+	}
+}
+
+#experiments
+{
+	.container
+	{
+		padding-top: 150px;
+	}
+	.ptf
+	{
+		display: inline-block;
+
+		margin: 20px;
+		
+
+		cursor: pointer;
+
+		background-position: center center;
+		background-size: 100% auto;
+
+		*display: inline;
+		*zoom: 1;
+	}
+}
+
+$spacing: 8px;
+
+#portfolio,
+#prototypes
+{
+
+	small:before
+	{
+		content:"[";
+		margin-right: $spacing;
+	}
+
+	small:after
+	{
+		content:"]";
+		margin-left: $spacing;
+	}
+
+	.container
+	{
+		background-color: rgba(0, 0, 0, 0.77);
+		padding-top: 90px;
+	}
+
+	h1
+	{
+		color: #86E21B;
+	}
+
+	article
+	{
+		max-width: 900px;
+		margin: auto;
+		padding: 80px 20px;
+		box-sizing: border-box;
+		color: #fff;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	}
+
+	img
+	{
+		vertical-align: top;
+		margin-bottom: 20px;
+	}
+
+	span
+	{
+		text-align: left;
+		margin-left: 30px;
+		display: inline-block;
+		width: 68%;
+	}
+
+	ul
+	{
+		padding: 0 24px;
+		margin: 0;
+	}
+
+	.btn
+	{
+		margin-top: 13px;
+	}
+}

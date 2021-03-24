@@ -1,0 +1,16 @@
+@import 'general/library';
+
+$f_title: $f_lgothic;
+$f_body: $f_montserrat;
+
+@import 'general/mixings';
+@import 'general/typography';
+@import 'general/keyframes';
+
+@import 'desktop/loading';
+@import 'desktop/main';
+@import 'desktop/general';
+@import 'desktop/navbar';
+@import 'desktop/home';
+@import 'desktop/portfolio';
+@import 'desktop/contacts';

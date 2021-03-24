@@ -1,0 +1,63 @@
+#portfolio
+{
+	position: relative;
+	z-index: 2;
+
+	width: 100%;
+	padding-bottom: 90px;
+
+	text-align: center;
+
+	background-color: #3b2314;
+
+	.orn
+	{
+		position: absolute;
+		@include position(x, x, -180px, 0);
+		@include size(100%, x, 270px, x);
+		background: url('../img/s-03.png') repeat-x center bottom;
+	}
+
+	.orn_02
+	{
+		position: absolute;
+		@include position(-156px, 20%, x, x);
+		@include size(51px, x, 126px, x);
+		background: url('../img/s-09.png') no-repeat -148px -114px;
+	}
+
+	.orn_03
+	{
+		position: relative;
+		@include position(-62px, x, x, 18%);
+		@include size(12px, x, 31px, x);
+		background: url('../img/s-09.png') no-repeat -53px -67px;
+	}
+
+	.ptf
+	{
+		display: inline-block;
+
+		margin: 30px;
+
+		cursor: pointer;
+
+		*display: inline;
+		*zoom: 1;
+		img { box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); }
+	}
+
+	#wheel
+	{
+		position: absolute;
+		@include position(-19px, x, x, -16px);
+		@include size(46px, x, 46px, x);
+		-webkit-transform: rotate(0deg);
+			-ms-transform: rotate(0deg);
+				transform: rotate(0deg);
+		-webkit-animation: rtr ease-in-out 4s infinite alternate;
+				animation: rtr ease-in-out 4s infinite alternate;
+
+		background: url('../img/s-09.png') no-repeat -36px -8px;
+	}
+}

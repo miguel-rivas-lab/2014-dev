@@ -1,0 +1,145 @@
+#home
+{
+	p
+	{
+		font-size: 11pt;
+	}
+
+	.container
+	{
+		position: relative;
+		z-index: 5;
+		@include size(550px, x, 500px, x);
+		@include position(-60px, x, x, 20%);
+
+		@media screen and (max-height: 700px){ top: -120px; }
+
+		&:hover > .preview
+		{
+			transform: rotate(360deg);
+		}
+
+		.preview
+		{
+			position: relative;
+			z-index: -1;
+			@include position(353px, -460px, x, x);
+			transform: rotate(270deg);
+			transform-origin: 15% 69%;
+			transition: 500ms;
+		}
+
+		.wheel
+		{
+			position: absolute !important;
+			z-index: -2;
+
+			display: block !important;
+		}
+	}
+}
+
+.txt
+{
+	font-size: 12pt;
+	position: absolute;
+	overflow-y: auto;
+	padding: 15px;
+	letter-spacing: 0;
+	@include size(348px, x, 190px, x);
+	@include position(245px, x, x, 76px);
+
+	h2
+	{
+		font-family: $f_title;
+	    font-size: 16pt;
+	    color: #381707;
+	    margin-top: 48px;
+	}
+
+	small
+	{
+	    display: block;
+	    color: #2f1e16;
+	    letter-spacing: 0;
+	    font-size: 9.5pt;
+	    font-weight: bold;
+	}
+}
+
+#info_03 h1
+{
+	font-size: 22pt;
+}
+
+#arrow_l,
+#arrow_r
+{
+	position: absolute;
+	top: 499px;
+	display: block;
+	@include size(103px, x, 72px, x);
+	cursor: pointer;
+
+	background-image: url('../img/btn.png');
+	background-repeat: no-repeat;
+}
+
+#arrow_l
+{
+	left: 270px;
+	background-position: -5px -78px;
+	&:hover
+	{
+		background-position: -5px -3px;
+	}
+}
+#arrow_r
+{
+	left: 400px;
+	background-position: -113px -78px;
+	&:hover
+	{
+		background-position: -113px -3px;
+	}
+}
+
+#screen
+{
+	position: absolute;
+	@include size(550px, x, 500px, x);
+	@include position(0, x, x, 0);
+	background-image: url('../img/e002.png');
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+
+#w_01
+{
+	@include position(190px, -15px, x, x);
+}
+
+#w_02
+{
+	@include position(260px, x, x, -50px);
+}
+
+#w_03
+{
+	@include position(210px, x, x, 10px);
+}
+
+#w_04
+{
+	@include position(380px, x, x, 60px);
+}
+
+#w_05
+{
+	@include position(350px, x, x, 150px);
+}
+
+#w_06
+{
+	@include position(300px, 130px, x, x);
+}

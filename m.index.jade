@@ -1,0 +1,27 @@
+- var viewPort = true
+
+doctype html
+html
+	head
+		include jade/vars
+		include jade/metatags
+		include jade/portfolio_data
+		link(
+			href='http://fonts.googleapis.com/css?family=Montserrat:400,700',
+			rel='stylesheet',
+			type='text/css'
+			)
+		link(
+			href="https://fonts.googleapis.com/css?family=Roboto+Slab",
+			rel="stylesheet",
+			type="text/css")
+		link(href="css/m.application.css", rel="stylesheet")
+		
+
+	body
+		include jade/mobile/header
+		include jade/mobile/body
+		include jade/mobile/portfolio
+		include jade/mobile/footer
+
+		script(src="js/m.application.js", type="text/javascript")

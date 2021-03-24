@@ -1,0 +1,43 @@
+nav
+{
+	font-weight: bold;
+
+	position: absolute;
+	z-index: 9;
+	@include position(0, 0, x, x);
+	@include size(100%, x, 31px, x);
+	padding-top: 20px;
+
+	color: #666;
+	border-bottom: 4px solid #111;
+	background: #222;
+	a
+	{
+		font-family: $f_body;
+		font-size: 10pt;
+		font-weight: bold;
+		display: inline;
+		color: $chartreuse;
+		margin: 0 14px;
+		&:hover
+		{
+			color: #fff;
+		}
+	}
+}
+
+#logo
+{
+	position: absolute;
+	top: 0;
+
+	width: 123px;
+	margin: auto;
+
+	cursor: pointer;
+}
+
+#btn_home
+{
+	margin-left: 170px;
+}

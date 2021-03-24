@@ -1,0 +1,58 @@
+aside.loading {
+	position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#main_wheel
+{
+	position: absolute;
+	z-index: 21;
+	width: 100%;
+	top: 40%;
+
+	.base
+	{
+		@include size(150px, x, 150px, x);
+		position: relative;
+		margin: auto;
+		border-radius: 50%;
+		background-color: #5f3e28;
+	}
+
+	.key
+	{
+		@include size(130%, x, 15%, x);
+		@include position(42.5%, x, x, -15%);
+		position: absolute;
+		background-color: #5f3e28;
+
+		&._01{  transform: rotate(0deg + 30 * 0); }
+		&._02{  transform: rotate(0deg + 30 * 1); }
+		&._03{  transform: rotate(0deg + 30 * 2); }
+		&._04{  transform: rotate(0deg + 30 * 3); }
+		&._05{  transform: rotate(0deg + 30 * 4); }
+		&._06{  transform: rotate(0deg + 30 * 5); }
+
+	}
+}
+
+#box_cover_01,
+#box_cover_02
+{
+	position: fixed;
+	z-index: 20;
+	@include size(50.1%, x, 100%, x);
+}
+
+#box_cover_01
+{
+	@include position(0, x, x, 0);
+	background: #8a5d3b;
+}
+
+#box_cover_02
+{
+	@include position(0, 0, x, x);
+	background: #a87b4f;
+}

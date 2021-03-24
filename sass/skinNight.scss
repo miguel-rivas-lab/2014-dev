@@ -1,0 +1,21 @@
+body
+{
+	background-color: #7D69AE;
+}
+
+#box_moon
+{
+	position: fixed;
+	z-index: -7;
+	bottom: -250px;
+	left: 20%;
+	display: block;
+	width: 600px;
+	height: 615px;
+	background: url('../img/bk_moon.png') center no-repeat;
+}
+
+.bird
+{
+	background-image: url('../img/sprites-06.png') !important;
+}
